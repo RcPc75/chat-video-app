@@ -1,0 +1,23 @@
+/* body {
+  background: #f7f7f7;
+  font-family: sans-serif;
+} */
+ 
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: none;
+}
+
+@media (max-width: 900px) {
+  .chat-area {
+    height: 45vh !important;
+    min-height: 220px;
+    max-height: 60vh;
+  }
+}
+
+[id^="nextjs"] {
+  display: none !important;
+}

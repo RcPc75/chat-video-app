@@ -8,7 +8,7 @@ export function startWebRTC({
   setLocalStream,
 }) {
   let pc
-  let localStream
+  // let localStream
 
   navigator.mediaDevices.getUserMedia({ video: true, audio: true })
     .then(stream => {
@@ -17,7 +17,7 @@ export function startWebRTC({
       if (setLocalStream) setLocalStream(stream)
 
       localVideo.current.srcObject = stream
-      localStream = stream
+      // localStream = stream
 
       pc = new RTCPeerConnection({
         iceServers: [{ urls: 'stun:stun.l.google.com:19302' }]
